@@ -64,4 +64,4 @@ def juntar(df,inter):
 dfinal = juntar(df = df, inter = inter)
 
 #Imprimimos un testimonio:
-dfinal.at[523, "Hecho Victimizante"]
+print(dfinal.at[523, "Hecho Victimizante"])
