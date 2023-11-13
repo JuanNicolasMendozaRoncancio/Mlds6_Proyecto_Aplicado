@@ -1,38 +1,15 @@
 # Diccionario de datos
 
-## Base de datos 1
+## Base de datos principal
 
-**Agregar una descripción de la tabla o fuente de datos.
-
-| Variable | Descripción | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| --- | --- | --- | --- | --- |
-| variable_1 | Descripción de la variable 1 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_2 | Descripción de la variable 2 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_3 | Descripción de la variable 3 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_4 | Descripción de la variable 4 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_5 | Descripción de la variable 5 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-
-- **Variable**: nombre de la variable.
-- **Descripción**: breve descripción de la variable.
-- **Tipo de dato**: tipo de dato que contiene la variable.
-- **Rango/Valores posibles**: rango o valores que puede tomar la variable.
-- **Fuente de datos**: fuente de los datos de la variable.
-
-## Base de datos 2
-
-**Agregar una descripción de la tabla o fuente de datos.
+Las variabels de nuestra base de datos inicial se encuentras descritas en la siguiente tabla:
 
 | Variable | Descripción | Tipo de dato | Rango/Valores posibles | Fuente de datos |
 | --- | --- | --- | --- | --- |
-| variable_1 | Descripción de la variable 1 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_2 | Descripción de la variable 2 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_3 | Descripción de la variable 3 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_4 | Descripción de la variable 4 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-| variable_5 | Descripción de la variable 5 | Tipo de dato | Rango/Valores posibles | Fuente de datos |
-
-- **Variable**: nombre de la variable.
-- **Descripción**: breve descripción de la variable.
-- **Tipo de dato**: tipo de dato que contiene la variable.
-- **Rango/Valores posibles**: rango o valores que puede tomar la variable.
-- **Fuente de datos**: fuente de los datos de la variable.
-
+| Codigo Victima Principal | Codigo único para cada victima | numerico | NA | Base de datos de la JEP |
+| Hecho victimizante | Descripción del hecho victimizante | Texto | NA | Victima |
+| Fecha Inicio | Fecha donde inicio el hecho victimizante | Fecha | NA | Base de datos de la JEP |
+| Departamento Hechos| Departamento donde ocurrieron los hechos | Texto | NA | Base de datos de la JEP |
+| Municipio Hechos | Municipio donde ocurrieron los hechos | Texto | NA | Base de datos de la JEP |
+| Lugar Hechos | Lugar o vereda donde ocurrieron los hechos | Texto | NA | Base de datos de la JEP |
+| Bloque | Bloque del grupo paramilitar respondable de los hechos | Texto | NA | Base de datos de la JEP |
