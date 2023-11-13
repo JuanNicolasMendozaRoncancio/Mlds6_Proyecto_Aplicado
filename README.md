@@ -1,10 +1,9 @@
-# Team Data Science Project Template
+# Proyecto Aplicado MLDS6
 
-Esta plantilla es una implementación de la plantilla de proyecto de Team Data Science Process que actualmente se utiliza en el "Programa de Formación en Machine Learning y Data Science" en la Universidad Nacional de Colombia.
+En esta repossitorio podra econtrar el proyecto aplicado del modulo 6 del diplomado de Machine Learning Y data Science de la Universidad Nacional de Colombia
 
-Esta plantilla proporciona las siguientes carpetas y archivos:
-
-* `src`: acá debe ir el código o implementación del proyecto en Python.
-* `docs`: en esta carpeta se encuentran las plantillas de los documentos definidos en la metodología.
-* `scripts`: esta carpeta debe contener los scripts/notebooks que se ejecutarán.
-* `pyproject.toml`: archivo de definición del proyecto en Python.
+En la entrega uno podra encontrar:
+* `Entendimiento del negocio`: En el archivo project_charter.md
+* `Diccionario de datos`: En el archivo data_summary.md
+* `Definición de los datos`: En el archivo data_definition.md
+* `Codigo de adquisición de datos`: En el archivo main.py de la carpeta data_acquistion
