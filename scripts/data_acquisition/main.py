@@ -1,7 +1,7 @@
 import pandas as pd
 
 #Importamos nuestro archivo de datos
-archivo_inicial = "/content/tdsp_template/docs/data/ArchivoInicialUno.xlsx"
+archivo_inicial = "/content/Mlds6_Proyecto_Aplicado/docs/data/ArchivoInicialUno.xlsx"
 df = pd.read_excel(archivo_inicial)
 
 
@@ -15,7 +15,7 @@ df = df.filter(items=columnas_a_mantener)
 
 
 
-# Generamos una función que divide las filas en segmentos, tal que 
+# Generamos una función que divide las filas en segmentos, tal que
 # cada fila de cada uno de los segmentos hable del mismo testimonio
 def intervalos(datafra):
 
@@ -62,6 +62,10 @@ def juntar(df,inter):
     return resultado
 
 dfinal = juntar(df = df, inter = inter)
+
+#cargamos nuestro archivo a nuestro repositorio
+ruta_archivo = '/content/Mlds6_Proyecto_Aplicado/docs/data/dfinal.xlsx'
+dfinal.to_excel(ruta_archivo, index=False)
 
 #Imprimimos un testimonio:
 print(dfinal.at[523, "Hecho Victimizante"])
