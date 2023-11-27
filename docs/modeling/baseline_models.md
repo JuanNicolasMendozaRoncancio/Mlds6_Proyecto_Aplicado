@@ -1,24 +1,34 @@
 # Reporte del Modelo Baseline
 
-Este documento contiene los resultados del modelo baseline.
-
 ## Descripción del modelo
 
-El modelo baseline es el primer modelo construido y se utiliza para establecer una línea base para el rendimiento de los modelos posteriores.
+El primer modelo generado fue el modelo LDA, luego de haber hecho una busqueda de hiperparametros con GridSearch se entreno con los siguientes hiperparametros:
+
+* Numero de topicos:
+* Metodo de aprendizaje:
+* Maximo de iteraciones:
+
+En él se obtuvieron la siguiente metrica perplexity y las palabras calve asociadas a cada uno de los topicos del modelo:
+
+
+- Perplexity:
+- Palabras de cada uno de los topicos:
 
 ## Variables de entrada
 
-Lista de las variables de entrada utilizadas en el modelo.
-
-## Variable objetivo
-
-Nombre de la variable objetivo utilizada en el modelo.
+Las variables de entrada son los documentos (testimonios) que preprocesamos en nuestra exteacción de los datos.
 
 ## Evaluación del modelo
 
 ### Métricas de evaluación
 
-Descripción de las métricas utilizadas para evaluar el rendimiento del modelo.
+Las principales metricas de evaluacion fueron las siguientes:
+
+Perplexytu:
+La perplejidad es una métrica comúnmente utilizada en el modelado de temas que resulta de una prueba de probabilidad retenida. Es una medida de inconsistencia, por lo que se prefieren valores más bajos. La perplejidad se utiliza para predecir los temas de documentos 'nuevos' para el modelo, que no formaron parte del corpus de entrenamiento. La interpretación de la perplejidad en el modelado de temas es que mide qué tan bien el modelo predice los datos retenidos. [1]
+
+Y la evaluación de las palabras clave de cada uno delos topicos por personal humano. En este se asginaton valores de 0,1 en cada combinación posibles topicos para identificar que tan separados parecian segun la persepcion humana. (el valor sera mas cercano a uno mientras mas se parezcan los topicos)
+
 
 ### Resultados de evaluación
 
@@ -26,14 +36,12 @@ Tabla que muestra los resultados de evaluación del modelo baseline, incluyendo 
 
 ## Análisis de los resultados
 
-Descripción de los resultados del modelo baseline, incluyendo fortalezas y debilidades del modelo.
+Vemos que el modelo presenta un perplejidad bastante alta, lo cual puede indicar que se adapta debilmente a nuevas muestras, esto se corrobra con la matriz generada por la evaluacion humana, la cual muestra varios valores cercanos a uno. Este fenomeo se puede deber a la falta de datos que se tiene al final de preprocesameinto junto con posibles errores en la busqueda de hiperparametros
 
 ## Conclusiones
 
-Conclusiones generales sobre el rendimiento del modelo baseline y posibles áreas de mejora.
+Se tiene un modelo base con metricas que pueden ser mejoradas con más datos y una exploración más a fondo, sin embargo, en una evaluacion posterior con la herramienta pyLDAvis puede llevar a una mejor visualizavion de los topicos y su separacioon
 
 ## Referencias
 
-Lista de referencias utilizadas para construir el modelo baseline y evaluar su rendimiento.
-
-Espero que te sea útil esta plantilla. Recuerda que puedes adaptarla a las necesidades específicas de tu proyecto.
+[1\]: https://bookdown.org/gaston_becerra/curso-intro-r/modelado-de-topicos.html
