@@ -43,3 +43,6 @@ for i, comp in enumerate(components):
                 " ".join(list(map(lambda x:x[0], sorted_terms)))
                 )
             )
+
+perplexity = lda.perplexity(X_np)
+print(f"Perplexity:{perplexity}")
