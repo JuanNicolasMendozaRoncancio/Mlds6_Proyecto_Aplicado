@@ -13,3 +13,8 @@ En la entrega dos encontrará:
 * `Análisis exploratorio de los datos`:En el archivo main.py en la carpeta eda
 * `Preprocesamiento de los datos`: En el archivo main.py de data_preprocesing
 * `Resumen de los datos`: En el archivo data_summary.md de la carpeta data
+
+Para la tercera entrega tendremos:
+* `Extracción de caracteristicas`: En la carpeta charextraction de scripts
+* `Entrenamiento y evaluación`: En la carpeta training, main.py para LDA y LSA.py para LSA
+* `Reporte de modelo baseline` y `Reporte del modelo`: En la carpeta modeling
