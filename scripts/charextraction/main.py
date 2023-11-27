@@ -28,10 +28,11 @@ vect = (CountVectorizer(max_features=1000, max_df=0.7).fit(corpus))
 X = vect.transform(corpus)
 X_np = X.toarray()
 vocab = vect.get_feature_names_out()
-#Guardamos nuestra representación como un archivo xlsx
+#Guardamos nuestra representación en archivos xlsx
 dfBoW = pd.DataFrame(X_np)
 dfBoW.to_excel("/content/Mlds6_Proyecto_Aplicado/docs/data/BoWrepre.xlsx", index=False)
-
+vocabBoW = pd.DataFrame(vocab)
+vocabBoW.to_excel("/content/Mlds6_Proyecto_Aplicado/docs/data/VocabBow.xlsx", index=False)
 
 
 
@@ -40,6 +41,8 @@ tfidf_vectorizer = TfidfVectorizer(max_features=1000, max_df=0.7)
 X_tfidf = tfidf_vectorizer.fit_transform(corpus)
 X_tfidf_np = X_tfidf.toarray()
 vocabu = tfidf_vectorizer.get_feature_names_out()
-#Guardamos nuestra representación como xlsx
+#Guardamos nuestra representación en xlsx
 dfTFIDF = pd.DataFrame(X_tfidf_np)
 dfTFIDF.to_excel("/content/Mlds6_Proyecto_Aplicado/docs/data/TFIDFrepre.xlsx", index=False)
+vocabTFIDF = pd.DataFrame(vocabu)
+vocabTFIDF.to_excel("/content/Mlds6_Proyecto_Aplicado/docs/data/VocabTFIDF.xlsx", index=False)
