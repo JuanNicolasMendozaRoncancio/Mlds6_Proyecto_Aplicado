@@ -23,6 +23,9 @@ lsa = TruncatedSVD(
     n_components=grid_search.best_params_["n_components"],
     ).fit(X_np)
 
+vocabu = pd.read_excel("/content/Mlds6_Proyecto_Aplicado/docs/data/VocabTFIDF.xlsx")
+vocab = vocabu.to_numpy()
+
 # Iteramos sobre cada tópico
 for i, comp in enumerate(components):
     # Juntamos los términos con cada uno de los valores en la matriz V
@@ -37,6 +40,6 @@ for i, comp in enumerate(components):
     print(
             "Tópico {}: {}".format(
                 i,
-                " ".join(list(map(lambda x:x[0], sorted_terms)))
+                " ".join(list(map(lambda x: str(x[0]), sorted_terms)))
                 )
             )
