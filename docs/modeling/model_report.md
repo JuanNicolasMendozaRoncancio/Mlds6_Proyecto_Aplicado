@@ -2,24 +2,43 @@
 
 ## Resumen Ejecutivo
 
-En esta sección se presentará un resumen de los resultados obtenidos del modelo final. Es importante incluir los resultados de las métricas de evaluación y la interpretación de los mismos.
+El modelo final será el modelo base. Finalmente, se realizaron dos modelos, uno de LDA y otro de LSA, obteniendo las siguientes métricas de perplexity para el primero y evaluación humana para cada uno:
+
+Modelo LSA:
+* Tópico 0: esposo, pasar, ir, san, vicente, el, carro, decir, llegar, poder, florencia, caguan, momento, presidente, conductor,
+* Tópico 1: abusar, sexual, abuso, embarazado, hecho, relato, desplazamiento, tortura, denuncia, año, encapuchado, violencia, edad, secuestro, santander,
+* Tópico 2: año, alias, padre, frente, finca, secuestro, familia, hijo, vereda, municipio, senor, secuestrar, millon, el, hecho,
+* Tópico 3: llegar, llevar, ir, decir, casa, tener, dejar, carro, matar, el, yo, vereda, comandante, persona, llamar,
+* Tópico 4: municipio, grupo, frente, policia, guerrillero, año, secuestro, militar, encontrar, secuestrar, corregimiento, ep, vehiculo, armado, hora,
+
+Se observa que las métricas del modelo base, aunque la diferencia no es significativa, son mejores que las del modelo LSA, por lo cual se elige el primero.
 
 ## Descripción del Problema
 
-En esta sección se describirá el problema que se buscó resolver con el modelo final. Se debe incluir una descripción detallada del problema, el contexto en el que se desarrolla, los objetivos que se persiguen y la justificación del modelo.
+El objetivo inicial era la identificación de tópicos en un corpus formado por testimonios enmarcados en el conflicto armado colombiano. Este conflicto ha causado un gran daño en nuestro país, y es por esto que debemos utilizar todas nuestras herramientas para abordarlo y comprenderlo de la mejor manera. Es por esto que se utiliza el modelo de tópicos para identificar tópicos relevantes en un conjunto medianamente grande de testimonios.
+
+El modelo presentado cumple con este objetivo, ya que presenta 5 tópicos medianamente diferentes con los cuales se podría abordar cada una de las problemáticas representadas en los tópicos individuales.
 
 ## Descripción del Modelo
 
-En esta sección se describirá el modelo final que se desarrolló para resolver el problema planteado. Se debe incluir una descripción detallada del modelo, la metodología utilizada y las técnicas empleadas.
+El modelo final es un modelo de análisis de tópicos usando LDA con las siguientes métricas:
+
+* Número de tópicos:
+* Método de aprendizaje:
+* Máximo de iteraciones:
+
+Para construir este modelo, se implementó una metodología CRISP-DM que se puede ver ilustrada en este mismo repositorio. Además, para la búsqueda de hiperparámetros se hizo una búsqueda en grilla con GridSearchCV.
 
 ## Evaluación del Modelo
 
-En esta sección se presentará una evaluación detallada del modelo final. Se deben incluir las métricas de evaluación que se utilizaron y una interpretación detallada de los resultados.
+Las métricas trabajadas para este modelo son la métrica perplexity y la evaluación humana ya descrita anteriormente.
+
+
+
+
+
+Se observa entonces que nuestro modelo podría tener cierta dificultad al adaptarse a nuevos datos, esto debido a que la cantidad de testimonios era bastante baja, lo cual da pie a que el modelo no sea tan robusto. También, en la matriz de evaluación humana se observa que los tópicos no son tan distintos.
 
 ## Conclusiones y Recomendaciones
 
-En esta sección se presentarán las conclusiones y recomendaciones a partir de los resultados obtenidos. Se deben incluir los puntos fuertes y débiles del modelo, las limitaciones y los posibles escenarios de aplicación.
-
-## Referencias
-
-En esta sección se deben incluir las referencias bibliográficas y fuentes de información utilizadas en el desarrollo del modelo.
+Se concluye entonces que, para tener un modelo más robusto y realmente aplicable, se deben considerar más parámetros y realizar una búsqueda de hiperparámetros más exhaustiva. Esto se debe a que con pocos testimonios, los tópicos suelen no estar lo suficientemente separados para distinguirlos. Sin embargo, el modelo es un primer paso hacia un modelo más complejo pero a su vez más amplio, con el cual se podrían enfocar investigaciones que aborden a lo largo del conflicto armado y su historia en nuestro país.
