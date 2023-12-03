@@ -7,6 +7,8 @@ En esta repossitorio podra econtrar el proyecto aplicado del modulo 6 del diplom
 En este proyecto se usan las siguientes librerias que deben ser instaladas de manera manual antes de proceder a ejecutar los codigos:
 * Unidecode: Version 1.3.7
 * Spacy: Version 3.7.2
+* mlflow: Version 2.1.0 requests
+* pyngrok: Version 7.0.2
 
 En la entrega uno podra encontrar:
 * `Entendimiento del negocio`: En el archivo project_charter.md
