@@ -70,6 +70,9 @@ sns.kdeplot(data=palbrasLong, ax=axes[2])
 axes[2].set_title("Gráfico de Densidad")
 
 plt.tight_layout()
+
+plt.savefig('/content/Mlds6_Proyecto_Aplicado/images/longuitud_de_testimonios.jpg')
+
 plt.show()
 print("\n")
 
@@ -81,6 +84,7 @@ print(palbrasLongChar.describe())
 print("\n")
 
 print("Vemos entonces que el texto de 5385 palabras está cerca de los 31854 caracteres. También nuestros textos tienen en promedio 1657 caracteres. Veamos ahora las gráficas correspondientes.\n")
+
 fig, axes = plt.subplots(1, 3, figsize=(15, 5))
 
 sns.histplot(data=palbrasLongChar, kde=True, ax=axes[0])
@@ -93,6 +97,8 @@ sns.kdeplot(data=palbrasLongChar, ax=axes[2])
 axes[2].set_title("Gráfico de Densidad")
 
 plt.tight_layout()
+
+plt.savefig('/content/Mlds6_Proyecto_Aplicado/images/char_de_testimonios.jpg')
 
 plt.show()
 print("\n")
@@ -119,5 +125,7 @@ plt.title('Relación y Regresión Lineal')
 plt.xlabel('Número de palabras')
 plt.ylabel('Número de caraceteres')
 plt.legend()
+
+plt.savefig('/content/Mlds6_Proyecto_Aplicado/images/Regrecion_lineal.jpg')
 
 plt.show()
