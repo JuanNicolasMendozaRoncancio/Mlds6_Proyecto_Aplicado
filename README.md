@@ -26,3 +26,9 @@ Para la tercera entrega tendremos:
 * `Extracción de caracteristicas`: En la carpeta charextraction de scripts
 * `Entrenamiento y evaluación`: En la carpeta training, main.py para LDA y LSA.py para LSA
 * `Reporte de modelo baseline` y `Reporte del modelo`: En la carpeta modeling
+
+En la cuarta entrega podra encontrar:
+* `Despliege`: En el archivo main.py de la carpeta deployment de la carpeta scrpits
+* `Documentación de despliege e infraestructura`: En el archivo deploymentdoc de la carpeta deployment de la carpeta docs
+
+**Nota**: el archivo de despliege debe ser ejecutado en su propia maquina o PC con su propio token de mlflow.
