@@ -10,7 +10,10 @@ description = "En este proyecto se realiza un modelo LDA de análisis de topicos
 requires-python = ">3.8"
 dependencies = [
     "numpy",
-    
+    "unidecode",
+    "spacy",
+    "mlflow",
+    "pyngrok"
 ]
 
 [tool.setuptools.packages.find]
