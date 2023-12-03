@@ -18,6 +18,9 @@ X_np = dfTFIDF.to_numpy()
 
 grid_search.fit(X_np)
 
+best_lsa = grid_search.best_estimator_
+components = best_lsa.components_
+
 lsa = TruncatedSVD(
     n_iter= grid_search.best_params_["n_iter"],
     n_components=grid_search.best_params_["n_components"],
@@ -25,6 +28,7 @@ lsa = TruncatedSVD(
 
 vocabu = pd.read_excel("/content/Mlds6_Proyecto_Aplicado/docs/data/VocabTFIDF.xlsx")
 vocab = vocabu.to_numpy()
+
 
 # Iteramos sobre cada tópico
 for i, comp in enumerate(components):
