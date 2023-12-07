@@ -13,7 +13,8 @@ dependencies = [
     "unidecode",
     "spacy",
     "mlflow",
-    "pyngrok"
+    "pyngrok",
+    "wordcloud
 ]
 
 [tool.setuptools.packages.find]
