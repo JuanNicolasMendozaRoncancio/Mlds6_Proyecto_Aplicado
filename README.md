@@ -9,6 +9,7 @@ En este proyecto se usan las siguientes librerias que deben ser instaladas de ma
 * Spacy: Version 3.7.2
 * mlflow: Version 2.1.0 requests
 * pyngrok: Version 7.0.2
+* wordcloud
 
 En la entrega uno podra encontrar:
 * `Entendimiento del negocio`: En el archivo project_charter.md
@@ -31,4 +32,8 @@ En la cuarta entrega podra encontrar:
 * `Despliege`: En el archivo main.py de la carpeta deployment de la carpeta scrpits
 * `Documentación de despliege e infraestructura`: En el archivo deploymentdoc de la carpeta deployment de la carpeta docs
 
+En la ultima entrega:
+* `Codigo de evaluación`: En la carpeta evaluation
+* `Documentación de despliege e infraestructura`: Documento de concluciones y cierre en acceptance en docs
+  
 **Nota**: el archivo de despliege debe ser ejecutado en su propia maquina o PC con su propio token de mlflow.
