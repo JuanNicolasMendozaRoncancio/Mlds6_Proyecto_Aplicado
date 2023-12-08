@@ -64,7 +64,6 @@ Hay varias áreas de mejora:
 ## Conclusiones
 
 - Resumen de los resultados y principales logros del proyecto.
-
 Los principales resultados y logros del proyecto se componen en la realización del modelo como tal. Tener un modelo capaz de identificar los tópicos más comunes en un grupo dado de testimonios puede llegar a ser un paso significativo en la búsqueda de la verdad del conflicto armado en Colombia. Además de esto, el proceso que se usó para llegar al mismo modelo puede ser mejorado usando más datos o refinando el preprocesamiento de los mismos.
 
 - Conclusiones finales y recomendaciones para futuros proyectos.
