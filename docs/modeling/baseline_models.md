@@ -39,15 +39,11 @@ Tenemos las siguientes tablas que muestran la evalucaión de nuestro modelo:
 * Perplexity: 526.7825654984
 
 | Topicos | Topico 0 | Topico 1 | Topico 2 | Topico 3 | Topico 4 |
-
+|------|---------|-------|-------|-------|-------|
 | Topico 0 | 1 | 0.7 | 0.5 | 0.2 | 0.4 |
-
 | Topico 1 | 0.7 | 1 | 0.2 | 0.2 | 0.5 |
-
 | Topico 2 | 0.5 | 0.2 | 1 | 0.7 | 0.5 |
-
 | Topico 3 | 0.4 | 0.5 | 0.7 | 1 | 0.2 |
-
 | Topico 4 | 0.4 | T0.5 | 0.5 | 0.2 | 1 |
 
 ## Análisis de los resultados
