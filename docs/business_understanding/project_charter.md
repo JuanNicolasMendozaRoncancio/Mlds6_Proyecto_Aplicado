@@ -60,11 +60,11 @@ La metodología a usar será una adaptación de la metodología TDSP a una sola 
 
 | Etapa | Duración Estimada | Fechas |
 |------|---------|-------|
-| Entendimiento del negocio y carga de datos | 2 semanas | del 1 de mayo al 15 de mayo |
-| Preprocesamiento, análisis exploratorio | 4 semanas | del 16 de mayo al 15 de junio |
-| Modelamiento y extracción de características | 4 semanas | del 16 de junio al 15 de julio |
-| Despliegue | 2 semanas | del 16 de julio al 31 de julio |
-| Evaluación y entrega final | 3 semanas | del 1 de agosto al 21 de agosto |
+| Entendimiento del negocio y carga de datos | 1 semana | del 13 de noviembre al 17 de noviembre |
+| Preprocesamiento, análisis exploratorio | 1 semana | del 20 de noviembre al 24 |
+| Modelamiento y extracción de características | 1 semana | del 27 de noviembre al 1 de diciembre |
+| Despliegue | 1 semana | del 16 de julio al 31 de julio |
+| Evaluación y entrega final | 1 semana | del 2 de diciembre al 8 de diciembre |
 
 
 [1]:https://web.comisiondelaverdad.co/actualidad/noticias/principales-cifras-comision-de-la-verdad-informe-final
